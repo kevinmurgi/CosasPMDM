@@ -1,0 +1,36 @@
+DPI = Dots per inch
+Cantidad de pixeles que hay en una pulgada, ergo densidad de pantalla. Cada movil tiene su cantidad concreta, y para dispositivos Android hay de todo tipo.
+
+Para simplificar esto Android ha creado "logical pixel densities", donde:
+DPI		Nombre		Escala
+160		MDPI		1x
+240		HDPI		1.5x
+320		XHDPI		2x
+480		XXHDPI		3x
+
+Por ejemplo, si un dispositivo movil tiene una densidad de pantalla de 160, sería MDPI.
+En Android 160 DPI es la densidad "base" a partir de la cual se calculan en resto.
+
+DIP o DP = Density-Independent Pixels
+Es una unidad virtual de píxeles que hace referencia a un pixel fisico en una pantalla de 160 DPI; por lo que si la pantalla tiene una mayor densidad se escala de forma automatica.
+
+Escalas:
+DPI		DIP
+160		1x1 ~ 1 pixel fisico
+240		1.5x1.5 ~ 2 pixeles fisicos
+320		2x2 ~ 4 pixeles fisicos
+480		3x3 ~ 9 fixeles fisicos
+
+Los DP se utilizan para que los elementos de interfaz, independientemente del dispositivo sobre el que se ejecutan, mantengan el mismo tamaño fisico. Si se utilizasen medidas de pixeles fisicos esto no seria posible, pero utilizando los DP que escalan el tamaño de forma automatica si se puede hacer.
+
+Se pueden hacer los calculos de conversion de cabeza o utilizando la formula:
+
+ 1 px	  160 dpi
+------ = ----------
+ 1 dp	  160 dpi
+
+
+
+ 3 px	  480 dpi
+------ = ----------
+ 1 dp	  160 dpi

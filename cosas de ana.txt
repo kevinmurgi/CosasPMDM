@@ -1,0 +1,21 @@
+El Spinner no se usa tanto hoy en dia ya que es estático, ahora mismo se utilizan los ListView.
+Hay 3 formas de guardar/recoger los datos de un Spinner:
+	- En el dispositivo donde se va a ejecutar:
+		En res/values/arrays.xml
+		Si es algo pequeño no pasaría nada pero si hay mucha información se limitan los 		recursos del dispositivo.
+	- Recogiendolos de una BBDD
+	- Altos recursos ¿?¿?¿?
+
+
+
+Kitkat (EL GRAN CAMBIO) es importante proque es la primera vez que utilizan un nombre comercial y hubo un gran cambio tambien en software como la introduccion de los targets.
+
+Lollipop es importante porque es donde se inicia Material Design.
+
+
+
+
+maven {
+            url "https://maven.google.com"
+        }
+Importante añadir en build.gradle -> allprojects

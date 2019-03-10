@@ -1,0 +1,8 @@
+sudo usermod -a -G plugdev usuario
+
+archivo rules con la IP de la tablet
+
+mandar archivo a "/lib/udev/rules.d"
+
+sudo service udev restart
+reiniciar pc
